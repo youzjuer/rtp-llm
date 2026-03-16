@@ -1,4 +1,4 @@
-#include "rtp_llm/cpp/devices/cuda_impl/CudaGraphUtils.h"
+#include "rtp_llm/cpp/devices/GraphBaseUtils.h"
 #include <iostream>
 
 namespace rtp_llm {

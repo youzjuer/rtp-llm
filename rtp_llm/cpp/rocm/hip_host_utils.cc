@@ -4,6 +4,18 @@
 namespace rtp_llm {
 namespace rocm {
 
+namespace {
+bool in_hip_graph_capture = false;
+}
+
+void setHipGraphCaptureEnabled(bool enabled) {
+    in_hip_graph_capture = enabled;
+}
+
+bool isHipGraphCaptureEnabled() {
+    return in_hip_graph_capture;
+}
+
 static const char* _hipGetErrorEnum(hipError_t error) {
     return hipGetErrorString(error);
 }
